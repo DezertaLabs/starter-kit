@@ -75,14 +75,6 @@ const config = {
 	async rewrites() {
 		return [
 			{
-				source: "/blog",
-				destination: "https://dezertalabs.vercel.app/blog", 
-			},
-			{
-				source: "/blog/:path*",
-				destination: "https://dezertalabs.vercel.app/blog/:path*",
-			},
-			{
 				source: '/ping/data-event',
 				destination: `${ANALYTICS_BASE_URL}/api/data-event`,
 			},
